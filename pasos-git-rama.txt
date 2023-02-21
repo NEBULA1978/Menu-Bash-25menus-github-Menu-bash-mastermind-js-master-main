@@ -1,0 +1,36 @@
+  127  git init
+  128  git branch -m trunk
+  129  git status
+  130  git add .
+  131  git commit -m "Añadiendo menu bash para ejecutar archivos js"
+  132  git status
+  133  git remote add origin https://github.com/NEBULA1978/Menu-Bash-25menus-github-Menu-bash-mastermind-js-master-main.git
+  134  git push -u origin main
+  135  git branch -M main
+  136  git remote add origin https://github.com/NEBULA1978/Menu-Bash-25menus-github-Menu-bash-mastermind-js-master-main.git
+  137  git push -u origin main
+  138  git add .
+  139  git commit -m "Añadiendo ejemplos a bloque0"
+  140  git status
+  141  git push
+  142  git diff
+  143  git branch nuevobloque1
+  144  git checkout nuevobloque1
+  145  git status
+  146  git branch
+  147  git add .
+  148  git commit -m "AÑadiendo input a las variables"
+  149  git add .
+  150  git commit -m "Añadiendo ejemplos de destructuring"
+  151  git status
+  152  git push -u origin nuevobloque1
+  153  git log
+  154  git branch -a
+  155  git checkout master
+  156  git checkout main
+  157  git branch -a
+  158  git pull origin main
+  159  git branch --merged
+  160  git merge nuevobloque1
+  161  git push origin main
+  162  git branch -a
