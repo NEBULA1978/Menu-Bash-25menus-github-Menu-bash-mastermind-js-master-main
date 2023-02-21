@@ -1,0 +1,35 @@
+< !DOCTYPE html >
+    <html>
+        <head>
+            <title>List Files in Folder</title>
+            <script>
+                function listFiles() {
+			var xhr = new XMLHttpRequest();
+                var url = "path/to/folder";
+                xhr.open("GET", url, true);
+                xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						var files = xhr.responseText.split("\n");
+                var list = document.getElementById("fileList");
+                for (var i = 0; i < files.length; i++) {
+							if (files[i] !== "") {
+								var li = document.createElement("li");
+                li.appendChild(document.createTextNode(files[i]));
+                list.appendChild(li);
+							}
+						}
+					} else {
+                    console.error(xhr.statusText);
+					}
+				}
+			};
+                xhr.send();
+		}
+            </script>
+        </head>
+        <body>
+            <button onclick="listFiles()">List Files</button>
+            <ul id="fileList"></ul>
+        </body>
+    </html>

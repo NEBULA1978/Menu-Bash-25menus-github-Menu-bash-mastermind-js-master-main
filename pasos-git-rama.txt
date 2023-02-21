@@ -14,7 +14,11 @@
   140  git status
   141  git push
   142  git diff
+
+  Creamos branch:
   143  git branch nuevobloque1
+
+  Entramos en branch:
   144  git checkout nuevobloque1
   145  git status
   146  git branch
